@@ -12,6 +12,9 @@ module.exports = {
         },
     },
     extend: {
+      spacing:{
+         128:'32rem'
+      },
       fontFamily: {
         gemunu: ['Gemunu Libre', 'sans-serif'],
         open: ['Open Sans', 'sans-serif'],
