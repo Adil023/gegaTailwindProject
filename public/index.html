@@ -10,11 +10,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class='open'>
+<body class='open dark'>
+
+     <div class="absolute top-1 left-5 cursor-pointer text-lg">
+          <i class="fa-solid fa-sun text-white" id="sun"></i>
+          <i class="fa-solid fa-moon text-black hidden" id="moon"></i>
+        </div>
   
   <!-- Header section -->
 
-   <header class="bg-black py-6 lg:py-12 text-gega-grey  uppercase">
+   <header class="dark:bg-black bg-white py-6 lg:py-12 bg:text-gega-grey text-black uppercase">
         <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
            <a href="#" class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey">GEGA</a>
            
@@ -416,5 +421,7 @@
           </div>
        </div>
    </footer>
+
+   <script src="./js/script.js"></script>
 </body>
 </html>

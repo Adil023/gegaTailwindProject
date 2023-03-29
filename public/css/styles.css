@@ -572,12 +572,20 @@ a {
   left: 2.5rem;
 }
 
-.col-span-6 {
-  grid-column: span 6 / span 6;
+.left-5 {
+  left: 1.25rem;
+}
+
+.top-1 {
+  top: 0.25rem;
 }
 
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
 }
 
 .mb-2 {
@@ -672,10 +680,6 @@ a {
   flex-basis: 75%;
 }
 
-.basis-1 {
-  flex-basis: 0.25rem;
-}
-
 .-rotate-45 {
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -685,12 +689,12 @@ a {
   cursor: pointer;
 }
 
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -727,10 +731,6 @@ a {
 
 .gap-10 {
   gap: 2.5rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
 }
 
 .gap-2 {
@@ -862,6 +862,11 @@ a {
   background-color: transparent;
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -904,6 +909,11 @@ a {
   padding: 1rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -944,9 +954,8 @@ a {
   padding-bottom: 1.5rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pl-10 {
@@ -969,10 +978,6 @@ a {
   padding-right: 1rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -981,9 +986,19 @@ a {
   font-family: Gemunu Libre, sans-serif;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -1001,11 +1016,6 @@ a {
   line-height: 1rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1020,6 +1030,11 @@ a {
 
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gega-grey {
@@ -1039,6 +1054,11 @@ a {
 
 .text-transparent {
   color: transparent;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1155,6 +1175,11 @@ a {
 
 .group:hover .group-hover\:opacity-50 {
   opacity: 0.5;
+}
+
+.dark .dark\:bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {
@@ -1298,6 +1323,12 @@ a {
     margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -1310,12 +1341,6 @@ a {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1326,17 +1351,17 @@ a {
     padding-bottom: 3rem;
   }
 
-  .lg\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
   .lg\:pb-16 {
     padding-bottom: 4rem;
   }
 
   .lg\:pl-0 {
     padding-left: 0px;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-6xl {
@@ -1352,11 +1377,6 @@ a {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .group:hover .lg\:group-hover\:mb-20 {
